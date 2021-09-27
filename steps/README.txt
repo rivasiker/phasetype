@@ -1,0 +1,1 @@
+This folder contains data files produced by various steps in the analysis. When using a workflow tool like GWF, this directory contains the output of the targets.

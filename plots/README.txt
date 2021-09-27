@@ -1,0 +1,1 @@
+This directory contains scripts for generating plots from the result files and the resulting plots in one or more formats.

@@ -1,0 +1,1 @@
+This directory contains the scripts wrote for conducting the analyses. The file names should describe the purpose of the scripts. At the top of each script, there should be a comment that briefly describes the input, output and purpose of the script.

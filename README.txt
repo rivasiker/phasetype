@@ -1,0 +1,1 @@
+This file should contain a small description of the project and its structure.
