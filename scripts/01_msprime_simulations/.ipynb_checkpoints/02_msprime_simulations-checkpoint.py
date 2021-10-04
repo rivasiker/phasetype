@@ -106,7 +106,7 @@ for i in range(int(mutated_ts.sequence_length)):
 # In[39]:
 
 
-get_ipython().run_cell_magic('R', '-i mut_pos_bin', "\ncalc_tm <- function(nInt) -log(1-1:(nInt)/nInt)\nnInt <- 20\ntm <- calc_tm(nInt)\n\n\n\nfun_optim <- function(x) {\n    require(expm)\n    rho <- x[1]\n    tht <- x[2]\n    initial <- (1:nInt)/nInt\n    transition <- FastTransMat(tm, rho)\n    emission <- matrix(c(1-calc_p_mut(tm, tht),calc_p_mut(tm, tht)),ncol=2,byrow=FALSE)\n    logFrwdLikFct(initial, transition, initial, emission, mut_pos_bin+1)\n}\n\ncl <- makeCluster(20)     # set the number of processor cores\nsetDefaultCluster(cl=cl)  # set 'cl' as default cluster\nclusterExport(cl=cl, c('nInt', 'mut_pos_bin', 'tm', 'FastTransMat', 'calc_p_mut', 'logFrwdLikFct'))\noptim_both <- optimParallel(c(0.1, 0.01), \n                            fun_optim, \n                            lower = c(0.00001, 0.00001),\n                            upper = c(1, 1),\n                            parallel = list(loginfo = TRUE),\n                            control = list(ndeps=1e-4, fnscale = -1, pgtol = 0),\n                            )")
+get_ipython().run_cell_magic('R', '-i mut_pos_bin', "\ncalc_tm <- function(nInt) -log(1-1:(nInt)/nInt)\nnInt <- 20\ntm <- calc_tm(nInt)\n\n\n\nfun_optim <- function(x) {\n    require(expm)\n    rho <- x[1]\n    tht <- x[2]\n    initial <- (1:nInt)/nInt\n    transition <- FastTransMat(tm, rho)\n    emission <- matrix(c(1-calc_p_mut(tm, tht),calc_p_mut(tm, tht)),ncol=2,byrow=FALSE)\n    logFrwdLikFct(initial, transition, initial, emission, mut_pos_bin+1)\n}\n\ncl <- makeCluster(20)     # set the number of processor cores\nsetDefaultCluster(cl=cl)  # set 'cl' as default cluster\nclusterExport(cl=cl, c('nInt', 'mut_pos_bin', 'tm', 'FastTransMat', 'calc_p_mut', 'logFrwdLikFct'))\noptim_both <- optimParallel(c(0.1, 0.01), \n                            fun_optim, \n                            lower = c(0.000001, 0.000001),\n                            upper = c(10, 10),\n                            parallel = list(loginfo = TRUE),\n                            control = list(ndeps=1e-4, fnscale = -1, pgtol = 0),\n                            )")
 
 
 # In[40]:
@@ -121,7 +121,7 @@ get_ipython().run_cell_magic('R', '', '\noptim_both')
 get_ipython().run_cell_magic('R', '', "\nwrite_csv(as_tibble(optim_both$loginfo), paste0('../../steps/01_msprime_simulations/sim', ide, '_rho', rho, '_tht', tht, '.csv'))")
 
 
-# In[41]:
+# In[42]:
 
 
 # get_ipython().system('jupyter nbconvert --to script 02_msprime_simulations.ipynb')
