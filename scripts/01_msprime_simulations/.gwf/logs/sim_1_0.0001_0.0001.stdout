@@ -1,0 +1,21 @@
+[22;0t]0;IPython: scripts/01_msprime_simulations$par
+[1] 1e-05 1e-05
+
+$value
+[1] -10.88655
+
+$counts
+function gradient 
+       2        2 
+
+$convergence
+[1] 0
+
+$message
+[1] "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+
+$loginfo
+     step  par1  par2        fn      gr1       gr2
+[1,]    1 1e-01 1e-02 272.48087 2276.768  3281.915
+[2,]    2 1e-05 1e-05  10.88655  699.691 35313.136
+
