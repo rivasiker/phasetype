@@ -1,0 +1,1261 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 13.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     45843,       1251]
+NotebookOptionsPosition[     44657,       1221]
+NotebookOutlinePosition[     45082,       1238]
+CellTagsIndexPosition[     45039,       1235]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"1", "-", 
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"-", "t"}]]}]], "*", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "t"], 
+   RowBox[{
+    SuperscriptBox["\[ExponentialE]", 
+     RowBox[{"-", "u"}]], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox["1", "4"], "+", 
+      RowBox[{"alpha", "*", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "u"}], "*", "mu"}]]}]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox["1", "4"], "+", 
+      RowBox[{"beta", "*", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "u"}], "*", "mu"}]]}]}], ")"}], "*", 
+    RowBox[{"(", 
+     RowBox[{
+      FractionBox["1", "4"], "+", 
+      RowBox[{"gamma", "*", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", 
+          RowBox[{"(", 
+           RowBox[{"t", "-", "u"}], ")"}]}], "*", "mu"}]]}]}], ")"}], 
+    RowBox[{"\[DifferentialD]", "u"}]}]}]}]], "Input",
+ CellChangeTimes->{{3.8715482796491117`*^9, 3.871548605825107*^9}, {
+  3.871548807044922*^9, 3.8715488096658897`*^9}, {3.871548843214293*^9, 
+  3.87154884981036*^9}, {3.871548930068075*^9, 3.87154893956245*^9}, {
+  3.871549108238318*^9, 3.871549113217577*^9}, {3.871549362439735*^9, 
+  3.871549369447364*^9}, {3.871549408509265*^9, 3.871549413610043*^9}, {
+  3.8715495992016573`*^9, 3.8715496059649487`*^9}},
+ CellLabel->"In[18]:=",ExpressionUUID->"65a2ec46-8abc-47c3-be39-79230206bed1"],
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"64", " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "-", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{"-", "t"}]]}], ")"}]}]], 
+  RowBox[{"(", 
+   RowBox[{"1", "+", 
+    RowBox[{"16", " ", "beta", " ", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "mu"}], " ", "t"}]], " ", "gamma"}], "-", 
+    FractionBox[
+     RowBox[{"4", " ", 
+      SuperscriptBox["\[ExponentialE]", 
+       RowBox[{
+        RowBox[{"-", "mu"}], " ", "t"}]], " ", "gamma"}], 
+     RowBox[{
+      RowBox[{"-", "1"}], "+", "mu"}]], "+", 
+    FractionBox[
+     RowBox[{"4", " ", "beta"}], 
+     RowBox[{"1", "+", "mu"}]], "+", 
+    RowBox[{"4", " ", "alpha", " ", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{"1", "+", "mu"}]], "+", 
+       FractionBox[
+        RowBox[{"4", " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "mu"}], " ", "t"}]], " ", "gamma", " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"4", " ", "beta"}], "+", "mu"}], ")"}]}], 
+        RowBox[{"1", "+", "mu"}]], "+", 
+       FractionBox[
+        RowBox[{"4", " ", "beta"}], 
+        RowBox[{"1", "+", 
+         RowBox[{"2", " ", "mu"}]}]]}], ")"}]}], "+", 
+    RowBox[{
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", "t"}]], " ", 
+     RowBox[{"(", 
+      RowBox[{
+       RowBox[{"-", "1"}], "-", 
+       RowBox[{"16", " ", "beta", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "mu"}], " ", "t"}]], " ", "gamma"}], "+", 
+       FractionBox[
+        RowBox[{"4", " ", "gamma"}], 
+        RowBox[{
+         RowBox[{"-", "1"}], "+", "mu"}]], "-", 
+       FractionBox[
+        RowBox[{"4", " ", "beta", " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "mu"}], " ", "t"}]]}], 
+        RowBox[{"1", "+", "mu"}]], "-", 
+       RowBox[{
+        FractionBox["1", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"1", "+", "mu"}], ")"}], " ", 
+          RowBox[{"(", 
+           RowBox[{"1", "+", 
+            RowBox[{"2", " ", "mu"}]}], ")"}]}]], 
+        RowBox[{"4", " ", "alpha", " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "2"}], " ", "mu", " ", "t"}]], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            SuperscriptBox["\[ExponentialE]", 
+             RowBox[{"mu", " ", "t"}]], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"2", " ", "mu"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"4", " ", "gamma", " ", 
+               RowBox[{"(", 
+                RowBox[{"1", "+", "mu"}], ")"}]}]}], ")"}]}], "+", 
+           RowBox[{"4", " ", "beta", " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", "mu", "+", 
+              RowBox[{"gamma", " ", 
+               RowBox[{"(", 
+                RowBox[{"4", "+", 
+                 RowBox[{"8", " ", "mu"}]}], ")"}]}]}], ")"}]}]}], 
+          ")"}]}]}]}], ")"}]}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.871549119682866*^9, 3.871549375559997*^9, 
+  3.871549420823963*^9},
+ CellLabel->"Out[18]=",ExpressionUUID->"35277ebb-1588-4b43-b46d-f4e576c0c88f"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"InputForm", "[", "%18", "]"}]], "Input",
+ CellChangeTimes->{{3.8715492847122498`*^9, 3.871549340650592*^9}, {
+  3.871549384700941*^9, 3.871549385101944*^9}, {3.8715494209112253`*^9, 
+  3.871549421303864*^9}, {3.871550502053924*^9, 3.87155053041643*^9}},
+ CellLabel->"In[21]:=",ExpressionUUID->"49eef8e3-928b-49db-b582-ddf0d0a94f31"],
+
+Cell["\<\
+(1 + (16*beta*gamma)/E^(mu*t) - 
+  (4*gamma)/(E^(mu*t)*(-1 + mu)) + 
+  (4*beta)/(1 + mu) + 
+  4*alpha*((1 + mu)^(-1) + 
+    (4*gamma*(1 + 4*beta + mu))/
+     (E^(mu*t)*(1 + mu)) + 
+    (4*beta)/(1 + 2*mu)) + 
+  (-1 - (16*beta*gamma)/E^(mu*t) + 
+    (4*gamma)/(-1 + mu) - 
+    (4*beta)/(E^(mu*t)*(1 + mu)) - 
+    (4*alpha*(E^(mu*t)*(1 + 2*mu)*
+        (1 + 4*gamma*(1 + mu)) + 
+       4*beta*(1 + mu + gamma*
+          (4 + 8*mu))))/(E^(2*mu*t)*
+      (1 + mu)*(1 + 2*mu)))/E^t)/
+ (64*(1 - E^(-t)))\
+\>", "Output",
+ CellChangeTimes->{{3.8715492942417297`*^9, 3.871549341321864*^9}, {
+   3.871549379313961*^9, 3.871549385617712*^9}, 3.871549423030016*^9, {
+   3.871550505482917*^9, 3.871550530989973*^9}},
+ CellLabel->
+  "Out[21]//InputForm=",ExpressionUUID->"01dec31a-f4cc-463a-86f5-\
+b62fa6810a27"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  FractionBox["1", 
+   RowBox[{"1", "+", 
+    RowBox[{"0.5", "*", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], "*", "t"}]]}], "-", 
+    RowBox[{"1.5", "*", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", "t"}]]}]}]], "*", 
+  RowBox[{
+   SubsuperscriptBox["\[Integral]", "0", "t"], 
+   RowBox[{
+    SubsuperscriptBox["\[Integral]", "0", "v"], 
+    RowBox[{"3", "*", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{
+       RowBox[{"-", "3"}], "*", "u"}]], "*", 
+     SuperscriptBox["\[ExponentialE]", 
+      RowBox[{"-", 
+       RowBox[{"(", 
+        RowBox[{"v", "-", "u"}], ")"}]}]], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["1", "4"], "+", 
+       RowBox[{"alpha", "*", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "u"}], "*", "mu"}]]}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["1", "4"], "+", 
+       RowBox[{"beta", "*", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "u"}], "*", "mu"}]]}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["1", "4"], "+", 
+       RowBox[{"gamma", "*", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"(", 
+            RowBox[{"v", "-", "u"}], ")"}]}], "*", "mu"}]]}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["1", "4"], "+", 
+       RowBox[{"delta", "*", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "v"}], "*", "mu"}]]}]}], ")"}], "*", 
+     RowBox[{"(", 
+      RowBox[{
+       FractionBox["1", "4"], "+", 
+       RowBox[{"epsilon", "*", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", 
+           RowBox[{"(", 
+            RowBox[{"t", "-", "v"}], ")"}]}], "*", "mu"}]]}]}], ")"}], 
+     RowBox[{"\[DifferentialD]", "u"}], 
+     RowBox[{"\[DifferentialD]", "v"}]}]}]}]}]], "Input",
+ CellChangeTimes->{
+  3.8715507507317266`*^9, {3.871551266727227*^9, 3.871551432422599*^9}},
+ CellLabel->"In[23]:=",ExpressionUUID->"726d931c-7455-45f1-9375-03f1afc9efcd"],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(", 
+   RowBox[{"3", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      RowBox[{"-", 
+       FractionBox[
+        RowBox[{"2", " ", "delta", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "2"}], "-", 
+           RowBox[{"8", " ", "gamma"}], "+", "mu"}], ")"}]}], 
+        RowBox[{
+         RowBox[{"-", "6"}], "+", "mu", "+", 
+         SuperscriptBox["mu", "2"]}]]}], "-", 
+      FractionBox[
+       RowBox[{"32", " ", "alpha", " ", "beta", " ", "delta", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "mu", "+", 
+          RowBox[{"8", " ", "gamma", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", "mu"}], ")"}]}]}], ")"}]}], 
+       RowBox[{"3", " ", 
+        SuperscriptBox[
+         RowBox[{"(", 
+          RowBox[{"1", "+", "mu"}], ")"}], "2"], " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "mu"}], ")"}]}]], "-", 
+      FractionBox[
+       RowBox[{"32", " ", "alpha", " ", "beta", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "mu"}], " ", "t"}]], " ", "epsilon", " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "mu", "+", 
+          RowBox[{"8", " ", "gamma", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", "mu"}], ")"}]}]}], ")"}]}], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"3", "+", "mu"}], ")"}]}]], "-", 
+      FractionBox[
+       RowBox[{"8", " ", "alpha", " ", "beta", " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"16", " ", "delta", " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{
+             RowBox[{"-", "mu"}], " ", "t"}]], " ", "epsilon"}]}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "mu", "+", 
+          RowBox[{"8", " ", "gamma", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", "mu"}], ")"}]}]}], ")"}]}], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{"1", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"3", "+", 
+          RowBox[{"2", " ", "mu"}]}], ")"}]}]], "+", 
+      FractionBox[
+       RowBox[{"16", " ", "delta", " ", "gamma", " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", 
+             RowBox[{"2", " ", "beta", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "mu"}], ")"}]}], "+", 
+          RowBox[{"2", " ", "alpha", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", 
+             RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}]}], ")"}]}], 
+       RowBox[{
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"2", "+", "mu"}], ")"}], " ", 
+        RowBox[{"(", 
+         RowBox[{"1", "+", 
+          RowBox[{"2", " ", "mu"}]}], ")"}]}]], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{"4", " ", 
+         RowBox[{"(", 
+          RowBox[{"alpha", "+", "beta"}], ")"}], " ", 
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "mu"}], " ", "t"}]], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", 
+           RowBox[{"2", " ", "gamma", " ", 
+            RowBox[{"(", 
+             RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"3", "+", 
+              RowBox[{"2", " ", "mu"}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"3", " ", 
+               SuperscriptBox["\[ExponentialE]", 
+                RowBox[{"mu", " ", "t"}]]}], "+", 
+              RowBox[{"4", " ", "epsilon", " ", 
+               RowBox[{"(", 
+                RowBox[{"3", "+", "mu"}], ")"}]}]}], ")"}]}], "+", 
+           RowBox[{"12", " ", "delta", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               SuperscriptBox["\[ExponentialE]", 
+                RowBox[{"mu", " ", "t"}]], " ", 
+               RowBox[{"(", 
+                RowBox[{"3", "+", "mu"}], ")"}]}], "+", 
+              RowBox[{"4", " ", "epsilon", " ", 
+               RowBox[{"(", 
+                RowBox[{"3", "+", 
+                 RowBox[{"2", " ", "mu"}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+        ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"3", " ", 
+         RowBox[{"(", 
+          RowBox[{"2", "+", "mu"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"3", "+", "mu"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"3", "+", 
+           RowBox[{"2", " ", "mu"}]}], ")"}]}], ")"}]}], "-", 
+      RowBox[{"2", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "mu"}], " ", "t"}]], " ", "epsilon", " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"2", "+", 
+           RowBox[{"8", " ", "gamma"}], "-", "mu"}], 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "3"}], "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]], "+", 
+         FractionBox[
+          RowBox[{
+           RowBox[{
+            RowBox[{"(", 
+             RowBox[{"1", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"2", "+", 
+              RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}], "+", 
+           RowBox[{"8", " ", "alpha", " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", "mu", "+", 
+              RowBox[{"2", " ", "beta", " ", 
+               RowBox[{"(", 
+                RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}]}]}], 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"-", "1"}], "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "mu"}], ")"}]}]]}], ")"}]}], "-", 
+      RowBox[{
+       RowBox[{"(", 
+        RowBox[{
+         SuperscriptBox["\[ExponentialE]", 
+          RowBox[{
+           RowBox[{"-", "mu"}], " ", "t"}]], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{
+            RowBox[{"-", "16"}], " ", "delta", " ", "epsilon", " ", 
+            RowBox[{"(", 
+             RowBox[{"2", "+", 
+              RowBox[{"8", " ", "gamma"}], "-", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"2", "+", 
+              RowBox[{"3", " ", "mu"}], "+", 
+              SuperscriptBox["mu", "2"]}], ")"}]}], "+", 
+           RowBox[{
+            SuperscriptBox["\[ExponentialE]", 
+             RowBox[{"mu", " ", "t"}]], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "2"}], "-", 
+              RowBox[{"8", " ", "gamma"}], "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"2", "+", 
+              RowBox[{"3", " ", "mu"}], "+", 
+              SuperscriptBox["mu", "2"]}], ")"}]}], "-", 
+           RowBox[{"3", " ", 
+            SuperscriptBox["\[ExponentialE]", 
+             RowBox[{"mu", " ", "t"}]], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"1", "+", "mu"}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"2", "+", 
+                 RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}], "+", 
+              RowBox[{"8", " ", "alpha", " ", 
+               RowBox[{"(", 
+                RowBox[{"1", "+", "mu", "+", 
+                 RowBox[{"2", " ", "beta", " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+           "-", 
+           RowBox[{"48", " ", "epsilon", " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{"2", " ", "gamma", " ", 
+               RowBox[{"(", 
+                RowBox[{"1", "+", "mu"}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", "mu"}], ")"}]}], "+", 
+                 RowBox[{"2", " ", "alpha", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}]}], 
+                ")"}]}], "+", 
+              RowBox[{"delta", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}], "+", 
+                 RowBox[{"8", " ", "alpha", " ", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "+", "mu", "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}]}]}], ")"}]}]}],
+              ")"}]}]}], ")"}]}], ")"}], "/", 
+       RowBox[{"(", 
+        RowBox[{"6", " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", "mu"}], ")"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"2", "+", "mu"}], ")"}]}], ")"}]}], "+", 
+      RowBox[{
+       FractionBox["1", 
+        RowBox[{
+         SuperscriptBox[
+          RowBox[{"(", 
+           RowBox[{"1", "+", "mu"}], ")"}], "2"], " ", 
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "4"}], "+", 
+           SuperscriptBox["mu", "2"]}], ")"}]}]], 
+       RowBox[{"2", " ", 
+        SuperscriptBox["\[ExponentialE]", 
+         RowBox[{
+          RowBox[{"-", "mu"}], " ", "t"}]], " ", 
+        RowBox[{"(", 
+         RowBox[{
+          RowBox[{"2", " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"mu", " ", "t"}]], " ", "gamma", " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "1"}], "+", 
+                RowBox[{"2", " ", "beta", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"2", "+", "mu"}], ")"}]}], "+", 
+             RowBox[{"2", " ", "alpha", " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{"2", "+", 
+                RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}]}], ")"}]}], 
+          "+", 
+          RowBox[{"delta", " ", 
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"32", " ", "epsilon", " ", "gamma", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", "mu"}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", 
+                   RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", "mu"}], ")"}]}], "+", 
+                RowBox[{"2", " ", "alpha", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", 
+                   RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}]}], 
+               ")"}]}], "+", 
+             RowBox[{
+              SuperscriptBox["\[ExponentialE]", 
+               RowBox[{"mu", " ", "t"}]], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", 
+                   RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}], "+", 
+                RowBox[{"8", " ", "alpha", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "mu", "+", 
+                   RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}]}]}], ")"}]}]}],
+             ")"}]}]}], ")"}]}]}], "+", 
+      RowBox[{
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "3"}], " ", 
+         RowBox[{"(", 
+          RowBox[{"1", "+", "mu"}], ")"}], " ", "t"}]], " ", 
+       RowBox[{"(", 
+        RowBox[{
+         FractionBox[
+          RowBox[{"32", " ", "alpha", " ", "beta", " ", "delta", " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "mu", "+", 
+             RowBox[{"8", " ", "gamma", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", "mu"}], ")"}]}]}], ")"}]}], 
+          RowBox[{"3", " ", 
+           SuperscriptBox[
+            RowBox[{"(", 
+             RowBox[{"1", "+", "mu"}], ")"}], "2"], " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "mu"}], ")"}]}]], "+", 
+         FractionBox[
+          RowBox[{"32", " ", "alpha", " ", "beta", " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"mu", " ", "t"}]], " ", "epsilon", " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "mu", "+", 
+             RowBox[{"8", " ", "gamma", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", "mu"}], ")"}]}]}], ")"}]}], 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"1", "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"3", "+", "mu"}], ")"}]}]], "+", 
+         FractionBox[
+          RowBox[{"8", " ", "alpha", " ", "beta", " ", 
+           SuperscriptBox["\[ExponentialE]", 
+            RowBox[{"mu", " ", "t"}]], " ", 
+           RowBox[{"(", 
+            RowBox[{"1", "+", 
+             RowBox[{"16", " ", "delta", " ", 
+              SuperscriptBox["\[ExponentialE]", 
+               RowBox[{
+                RowBox[{"-", "mu"}], " ", "t"}]], " ", "epsilon"}]}], ")"}], 
+           " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "mu", "+", 
+             RowBox[{"8", " ", "gamma", " ", 
+              RowBox[{"(", 
+               RowBox[{"1", "+", "mu"}], ")"}]}]}], ")"}]}], 
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{"1", "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"2", "+", "mu"}], ")"}], " ", 
+           RowBox[{"(", 
+            RowBox[{"3", "+", 
+             RowBox[{"2", " ", "mu"}]}], ")"}]}]], "+", 
+         RowBox[{
+          RowBox[{"(", 
+           RowBox[{"4", " ", 
+            RowBox[{"(", 
+             RowBox[{"alpha", "+", "beta"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", 
+              RowBox[{"2", " ", "gamma", " ", 
+               RowBox[{"(", 
+                RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{"3", "+", 
+                 RowBox[{"2", " ", "mu"}]}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"3", " ", 
+                  SuperscriptBox["\[ExponentialE]", 
+                   RowBox[{"2", " ", "mu", " ", "t"}]]}], "+", 
+                 RowBox[{"4", " ", 
+                  SuperscriptBox["\[ExponentialE]", 
+                   RowBox[{"2", " ", "mu", " ", "t"}]], " ", "epsilon", " ", 
+                  RowBox[{"(", 
+                   RowBox[{"3", "+", "mu"}], ")"}]}]}], ")"}]}], "+", 
+              RowBox[{"12", " ", "delta", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  SuperscriptBox["\[ExponentialE]", 
+                   RowBox[{"mu", " ", "t"}]], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"3", "+", "mu"}], ")"}]}], "+", 
+                 RowBox[{"4", " ", 
+                  SuperscriptBox["\[ExponentialE]", 
+                   RowBox[{"mu", " ", "t"}]], " ", "epsilon", " ", 
+                  RowBox[{"(", 
+                   RowBox[{"3", "+", 
+                    RowBox[{"2", " ", "mu"}]}], ")"}]}]}], ")"}]}]}], ")"}]}],
+            ")"}], "/", 
+          RowBox[{"(", 
+           RowBox[{"3", " ", 
+            RowBox[{"(", 
+             RowBox[{"2", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"3", "+", "mu"}], ")"}], " ", 
+            RowBox[{"(", 
+             RowBox[{"3", "+", 
+              RowBox[{"2", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+         RowBox[{
+          SuperscriptBox["\[ExponentialE]", 
+           RowBox[{"2", " ", 
+            RowBox[{"(", 
+             RowBox[{"1", "+", "mu"}], ")"}], " ", "t"}]], " ", 
+          RowBox[{"(", 
+           RowBox[{
+            FractionBox[
+             RowBox[{"2", " ", "delta", " ", 
+              SuperscriptBox["\[ExponentialE]", 
+               RowBox[{
+                RowBox[{"-", "2"}], " ", "t"}]], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"-", "2"}], "-", 
+                RowBox[{"8", " ", "gamma"}], "+", "mu"}], ")"}]}], 
+             RowBox[{
+              RowBox[{"-", "6"}], "+", "mu", "+", 
+              SuperscriptBox["mu", "2"]}]], "-", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{"16", " ", "delta", " ", 
+               SuperscriptBox["\[ExponentialE]", 
+                RowBox[{
+                 RowBox[{"-", "mu"}], " ", "t"}]], " ", "gamma", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", "mu"}], ")"}]}], "+", 
+                 RowBox[{"2", " ", "alpha", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}]}], 
+                ")"}]}], ")"}], "/", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"2", "+", "mu"}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"1", "+", 
+                 RowBox[{"2", " ", "mu"}]}], ")"}]}], ")"}]}], "+", 
+            RowBox[{"2", " ", 
+             SuperscriptBox["\[ExponentialE]", 
+              RowBox[{"mu", " ", "t"}]], " ", "epsilon", " ", 
+             RowBox[{"(", 
+              RowBox[{
+               FractionBox[
+                RowBox[{
+                 SuperscriptBox["\[ExponentialE]", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], " ", "t"}]], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", 
+                   RowBox[{"8", " ", "gamma"}], "-", "mu"}], ")"}]}], 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "3"}], "+", "mu"}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]], "+", 
+               FractionBox[
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"(", 
+                   RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}], "+", 
+                 RowBox[{"8", " ", "alpha", " ", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "+", "mu", "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}]}]}], 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"-", "1"}], "+", "mu"}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "+", "mu"}], ")"}]}]]}], ")"}]}], "+", 
+            RowBox[{
+             RowBox[{"(", 
+              RowBox[{
+               SuperscriptBox["\[ExponentialE]", 
+                RowBox[{
+                 RowBox[{"-", "2"}], " ", "t"}]], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"-", "16"}], " ", "delta", " ", "epsilon", " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "gamma"}], "-", "mu"}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", 
+                    RowBox[{"3", " ", "mu"}], "+", 
+                    SuperscriptBox["mu", "2"]}], ")"}]}], "+", 
+                 RowBox[{
+                  SuperscriptBox["\[ExponentialE]", 
+                   RowBox[{"mu", " ", "t"}]], " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "2"}], "-", 
+                    RowBox[{"8", " ", "gamma"}], "+", "mu"}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{"2", "+", 
+                    RowBox[{"3", " ", "mu"}], "+", 
+                    SuperscriptBox["mu", "2"]}], ")"}]}], "-", 
+                 RowBox[{"3", " ", 
+                  SuperscriptBox["\[ExponentialE]", 
+                   RowBox[{
+                    RowBox[{"2", " ", "t"}], "+", 
+                    RowBox[{"mu", " ", "t"}]}]], " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}], "+", 
+                    RowBox[{"8", " ", "alpha", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "mu", "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+                 "-", 
+                 RowBox[{"48", " ", 
+                  SuperscriptBox["\[ExponentialE]", 
+                   RowBox[{"2", " ", "t"}]], " ", "epsilon", " ", 
+                  RowBox[{"(", 
+                   RowBox[{
+                    RowBox[{"2", " ", "gamma", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}], "+", 
+                    RowBox[{"2", " ", "alpha", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}]}], 
+                    ")"}]}], "+", 
+                    RowBox[{"delta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}], "+", 
+                    RowBox[{"8", " ", "alpha", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "mu", "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}]}]}], ")"}]}]}],
+                    ")"}]}]}], ")"}]}], ")"}], "/", 
+             RowBox[{"(", 
+              RowBox[{"6", " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"1", "+", "mu"}], ")"}], " ", 
+               RowBox[{"(", 
+                RowBox[{"2", "+", "mu"}], ")"}]}], ")"}]}], "-", 
+            RowBox[{
+             FractionBox["1", 
+              RowBox[{
+               SuperscriptBox[
+                RowBox[{"(", 
+                 RowBox[{"1", "+", "mu"}], ")"}], "2"], " ", 
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"-", "4"}], "+", 
+                 SuperscriptBox["mu", "2"]}], ")"}]}]], 
+             RowBox[{"2", " ", 
+              SuperscriptBox["\[ExponentialE]", 
+               RowBox[{
+                RowBox[{"-", "mu"}], " ", "t"}]], " ", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"2", " ", 
+                 SuperscriptBox["\[ExponentialE]", 
+                  RowBox[{"mu", " ", "t"}]], " ", "gamma", " ", 
+                 RowBox[{"(", 
+                  RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}], "+", 
+                   RowBox[{"2", " ", "alpha", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}]}], 
+                  ")"}]}], "+", 
+                RowBox[{"delta", " ", 
+                 RowBox[{"(", 
+                  RowBox[{
+                   RowBox[{"32", " ", "epsilon", " ", "gamma", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "1"}], "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}]}]}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}], "+", 
+                    RowBox[{"2", " ", "alpha", " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}]}], 
+                    ")"}]}], "+", 
+                   RowBox[{
+                    SuperscriptBox["\[ExponentialE]", 
+                    RowBox[{"mu", " ", "t"}]], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"-", "2"}], "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "mu"}], ")"}], " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", 
+                    RowBox[{"8", " ", "beta"}], "+", "mu"}], ")"}]}], "+", 
+                    RowBox[{"8", " ", "alpha", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", "mu", "+", 
+                    RowBox[{"2", " ", "beta", " ", 
+                    RowBox[{"(", 
+                    RowBox[{"2", "+", "mu"}], ")"}]}]}], ")"}]}]}], ")"}]}]}],
+                   ")"}]}]}], ")"}]}]}]}], ")"}]}]}], ")"}]}]}], ")"}]}], 
+   ")"}], "/", 
+  RowBox[{"(", 
+   RowBox[{"1024", " ", 
+    RowBox[{"(", 
+     RowBox[{"1", "+", 
+      RowBox[{"0.5`", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{
+         RowBox[{"-", "3"}], " ", "t"}]]}], "-", 
+      RowBox[{"1.5`", " ", 
+       SuperscriptBox["\[ExponentialE]", 
+        RowBox[{"-", "t"}]]}]}], ")"}]}], ")"}]}]], "Output",
+ CellChangeTimes->{3.871550754721437*^9, 3.871551480695972*^9},
+ CellLabel->"Out[23]=",ExpressionUUID->"2adbd206-a5f8-4093-a96c-f49a0ff58f94"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"InputForm", "[", "%23", "]"}]], "Input",
+ CellChangeTimes->{{3.871551514567354*^9, 3.8715515166419086`*^9}},
+ CellLabel->"In[24]:=",ExpressionUUID->"d9423d0d-9925-4ad2-b787-6d0b62b50507"],
+
+Cell["\<\
+(3*((-2*delta*(-2 - 8*gamma + mu))/
+    (-6 + mu + mu^2) - 
+   (32*alpha*beta*delta*(2 + mu + 
+      8*gamma*(1 + mu)))/
+    (3*(1 + mu)^2*(2 + mu)) - 
+   (32*alpha*beta*epsilon*
+     (2 + mu + 8*gamma*(1 + mu)))/
+    (E^(mu*t)*(1 + mu)*(2 + mu)*
+     (3 + mu)) - (8*alpha*beta*
+     (1 + (16*delta*epsilon)/
+       E^(mu*t))*(2 + mu + 
+      8*gamma*(1 + mu)))/
+    ((1 + mu)*(2 + mu)*(3 + 2*mu)) + 
+   (16*delta*gamma*
+     ((-1 + 2*beta*(-2 + mu))*
+       (2 + mu) + 2*alpha*(-2 + mu)*
+       (2 + 8*beta + mu)))/
+    ((-2 + mu)*(2 + mu)*(1 + 2*mu)) - 
+   (4*(alpha + beta)*
+     (1 + 2*gamma*(2 + mu))*
+     ((3 + 2*mu)*(3*E^(mu*t) + 
+        4*epsilon*(3 + mu)) + 
+      12*delta*(E^(mu*t)*(3 + mu) + 
+        4*epsilon*(3 + 2*mu))))/
+    (3*E^(mu*t)*(2 + mu)*(3 + mu)*
+     (3 + 2*mu)) - 
+   (2*epsilon*((2 + 8*gamma - mu)/
+       ((-3 + mu)*(-2 + mu)) + 
+      ((1 + mu)*(2 + 8*beta + mu) + 
+        8*alpha*(1 + mu + 2*beta*
+           (2 + mu)))/((-1 + mu)*
+        (1 + mu)*(2 + mu))))/
+    E^(mu*t) - 
+   (-16*delta*epsilon*(2 + 8*gamma - 
+       mu)*(2 + 3*mu + mu^2) + 
+     E^(mu*t)*(-2 - 8*gamma + mu)*
+      (2 + 3*mu + mu^2) - 
+     3*E^(mu*t)*(-2 + mu)*
+      ((1 + mu)*(2 + 8*beta + mu) + 
+       8*alpha*(1 + mu + 2*beta*
+          (2 + mu))) - 48*epsilon*
+      (2*gamma*(1 + mu)*
+        ((-1 + 2*beta*(-2 + mu))*
+          (2 + mu) + 2*alpha*
+          (-2 + mu)*(2 + 8*beta + 
+           mu)) + delta*(-2 + mu)*
+        ((1 + mu)*(2 + 8*beta + mu) + 
+         8*alpha*(1 + mu + 2*beta*
+            (2 + mu)))))/
+    (6*E^(mu*t)*(-2 + mu)*(1 + mu)*
+     (2 + mu)) + 
+   (2*(2*E^(mu*t)*gamma*(1 + mu)*
+       ((-1 + 2*beta*(-2 + mu))*
+         (2 + mu) + 2*alpha*(-2 + mu)*
+         (2 + 8*beta + mu)) + 
+      delta*(32*epsilon*gamma*
+         (1 + mu)*
+         ((-1 + 2*beta*(-2 + mu))*
+           (2 + mu) + 2*alpha*
+           (-2 + mu)*(2 + 8*beta + 
+            mu)) + E^(mu*t)*(-2 + mu)*
+         ((1 + mu)*(2 + 8*beta + 
+            mu) + 8*alpha*(1 + mu + 
+            2*beta*(2 + mu))))))/
+    (E^(mu*t)*(1 + mu)^2*
+     (-4 + mu^2)) + 
+   ((32*alpha*beta*delta*(2 + mu + 
+        8*gamma*(1 + mu)))/
+      (3*(1 + mu)^2*(2 + mu)) + 
+     (32*alpha*beta*E^(mu*t)*epsilon*
+       (2 + mu + 8*gamma*(1 + mu)))/
+      ((1 + mu)*(2 + mu)*(3 + mu)) + 
+     (8*alpha*beta*E^(mu*t)*
+       (1 + (16*delta*epsilon)/
+         E^(mu*t))*(2 + mu + 
+        8*gamma*(1 + mu)))/
+      ((1 + mu)*(2 + mu)*
+       (3 + 2*mu)) + 
+     (4*(alpha + beta)*
+       (1 + 2*gamma*(2 + mu))*
+       ((3 + 2*mu)*(3*E^(2*mu*t) + 
+          4*E^(2*mu*t)*epsilon*
+           (3 + mu)) + 12*delta*
+         (E^(mu*t)*(3 + mu) + 
+          4*E^(mu*t)*epsilon*
+           (3 + 2*mu))))/(3*(2 + mu)*
+       (3 + mu)*(3 + 2*mu)) + 
+     E^(2*(1 + mu)*t)*
+      ((2*delta*(-2 - 8*gamma + mu))/
+        (E^(2*t)*(-6 + mu + mu^2)) - 
+       (16*delta*gamma*
+         ((-1 + 2*beta*(-2 + mu))*
+           (2 + mu) + 2*alpha*
+           (-2 + mu)*(2 + 8*beta + 
+            mu)))/(E^(mu*t)*(-2 + mu)*
+         (2 + mu)*(1 + 2*mu)) + 
+       2*E^(mu*t)*epsilon*
+        ((2 + 8*gamma - mu)/
+          (E^(2*t)*(-3 + mu)*
+           (-2 + mu)) + 
+         ((1 + mu)*(2 + 8*beta + 
+            mu) + 8*alpha*(1 + mu + 
+            2*beta*(2 + mu)))/
+          ((-1 + mu)*(1 + mu)*
+           (2 + mu))) + 
+       (-16*delta*epsilon*
+          (2 + 8*gamma - mu)*
+          (2 + 3*mu + mu^2) + 
+         E^(mu*t)*(-2 - 8*gamma + mu)*
+          (2 + 3*mu + mu^2) - 
+         3*E^(2*t + mu*t)*(-2 + mu)*
+          ((1 + mu)*(2 + 8*beta + 
+            mu) + 8*alpha*(1 + mu + 
+            2*beta*(2 + mu))) - 
+         48*E^(2*t)*epsilon*
+          (2*gamma*(1 + mu)*
+            ((-1 + 2*beta*(-2 + mu))*
+            (2 + mu) + 2*alpha*
+            (-2 + mu)*(2 + 8*beta + 
+            mu)) + delta*(-2 + mu)*
+            ((1 + mu)*(2 + 8*beta + 
+            mu) + 8*alpha*(1 + mu + 2*
+            beta*(2 + mu)))))/
+        (6*E^(2*t)*(-2 + mu)*(1 + mu)*
+         (2 + mu)) - 
+       (2*(2*E^(mu*t)*gamma*(1 + mu)*
+           ((-1 + 2*beta*(-2 + mu))*
+            (2 + mu) + 2*alpha*
+            (-2 + mu)*(2 + 8*beta + 
+            mu)) + delta*
+           (32*epsilon*gamma*(1 + mu)*
+            ((-1 + 2*beta*(-2 + mu))*(
+            2 + mu) + 2*alpha*(-2 + 
+            mu)*(2 + 8*beta + mu)) + 
+            E^(mu*t)*(-2 + mu)*
+            ((1 + mu)*(2 + 8*beta + 
+            mu) + 8*alpha*(1 + mu + 
+            2*beta*(2 + mu))))))/
+        (E^(mu*t)*(1 + mu)^2*
+         (-4 + mu^2))))/
+    E^(3*(1 + mu)*t)))/
+ (1024*(1 + 0.5/E^(3*t) - 1.5/E^t))\
+\>", "Output",
+ CellChangeTimes->{3.871551517503034*^9},
+ CellLabel->
+  "Out[24]//InputForm=",ExpressionUUID->"683333d0-b8fe-4988-ac52-\
+030272aeb7df"]
+}, Open  ]]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{254, Automatic}, {25, Automatic}},
+Magnification:>2. Inherited,
+FrontEndVersion->"13.1 for Mac OS X x86 (64-bit) (June 16, 2022)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"47e0ea34-cef4-452e-8bf4-871240003d6b"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 1526, 41, 92, "Input",ExpressionUUID->"65a2ec46-8abc-47c3-be39-79230206bed1"],
+Cell[2109, 65, 3328, 97, 336, "Output",ExpressionUUID->"35277ebb-1588-4b43-b46d-f4e576c0c88f"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5474, 167, 356, 5, 59, "Input",ExpressionUUID->"49eef8e3-928b-49db-b582-ddf0d0a94f31"],
+Cell[5833, 174, 808, 23, 636, "Output",ExpressionUUID->"01dec31a-f4cc-463a-86f5-b62fa6810a27"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[6678, 202, 2177, 66, 246, "Input",ExpressionUUID->"726d931c-7455-45f1-9375-03f1afc9efcd"],
+Cell[8858, 270, 30824, 791, 2423, "Output",ExpressionUUID->"2adbd206-a5f8-4093-a96c-f49a0ff58f94"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[39719, 1066, 211, 3, 59, "Input",ExpressionUUID->"d9423d0d-9925-4ad2-b787-6d0b62b50507"],
+Cell[39933, 1071, 4708, 147, 5172, "Output",ExpressionUUID->"683333d0-b8fe-4988-ac52-030272aeb7df"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
