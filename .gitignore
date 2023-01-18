@@ -1,2 +1,6 @@
 
 scripts/99_TRAILS_testing/post2.csv
+scripts/06_msprime_convert/hid_tab.csv
+scripts/06_msprime_convert/post_tab.csv
+scripts/06_msprime_convert/total_tab.csv
+scripts/06_msprime_convert/tree_tab.csv
