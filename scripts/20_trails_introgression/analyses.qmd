@@ -1,0 +1,38 @@
+---
+title: "Untitled"
+format: html
+editor: visual
+---
+
+```{r}
+
+library(tidyverse)
+
+totab <- tibble()
+for (i in seq(0, 1, 0.1)) {
+  if (i == 0) {
+    i <- '0.0'
+  }
+  if (i == 1) {
+    i <- '1.0'
+  }
+  totab <- bind_rows(totab, read_csv(paste0('joint_mat_', i, '.csv'), show_col_types = FALSE) |> mutate(m = as.character(i)))
+}
+
+```
+
+```{r fig.height=10, fig.width=12}
+
+totab |> 
+  # group_by(m, From) |>
+  # mutate(Prob = Prob/sum(Prob)) |>
+  ggplot() +
+  geom_tile(aes(From, To, fill = Prob)) +
+  geom_text(aes(From, To, label = round(Prob, 3))) +
+  facet_wrap(~m) +
+  scale_fill_viridis_c()
+  
+
+```
+
+
