@@ -4,3 +4,11 @@ scripts/06_msprime_convert/hid_tab.csv
 scripts/06_msprime_convert/post_tab.csv
 scripts/06_msprime_convert/total_tab.csv
 scripts/06_msprime_convert/tree_tab.csv
+scripts/08_real_data_chr1/chr1.filtered.region.maf
+scripts/08_real_data_chr1/cutpoints/tab_10_10.csv
+scripts/08_real_data_chr1/original/tab_10_10.csv
+scripts/08_real_data_chr21/chr21.filtered.maf
+scripts/09_msprime_new/post_tab.csv
+scripts/09_msprime_new/post_tab_cutpoints.csv
+scripts/99_TRAILS_testing/chr21.filtered.maf
+scripts/99_TRAILS_testing/chr21.maf
